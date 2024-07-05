@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal-portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b65ffee17.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png"> -->
+                <h1><span>P</span>ortfolio</h1>
+
+
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="reloadHome()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Abilities</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="box"></div>
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="header-text">
+            <h1>Hi! I am <Span>Arti</Span></h1>
+            <p>I am a passionate Web Developer.<br>Breathing life into ideas thought the magic of design and
+                technology.</p>
+
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aaru.png">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I believe in the power of collaboration and continuous learning. I enjoy working closely with
+                        clients and stakeholders to understand their needs and deliver solutions that exceed
+                        expectations. My approach to development is iterative, focusing on clean code, scalability, and
+                        performance optimization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="Skills">
+                        <ul>
+
+                            <li><span>Web Development<br></span>Html,CSS & Javascript Bootstrap5</li>
+                            <li><span>Python Programing<br></span>Use framworks flask ,Tinker</li>
+                            <li><span>React<br></span>using React for creating attractive website </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Traning at Grras solutions<br></span>Web Development</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2024<br></span>
+                                <h4>Master's in Information Technology</h4><br>S.S.JAIN subodh PG college
+                            </li>
+                            <li><span>2020-2022<br></span>
+                                <h4>Bachlor's in Mathematics</h4><br>Parishkar College of global Excellence
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------servies----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Abilities</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building beautiful and functional websites tailored to your needs. Let's turn your vision into
+                        reality with custom web development solutions.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React</h2>
+                    <p>Crafting dynamic and interactive user interfaces with React, enhancing user experience and
+                        driving engagement. Elevate your projects with the power of React's component-based
+                        architecture.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programing</h2>
+                    <p>Empower your projects with Python's versatility and simplicity, from web development to data
+                        analysis. Elevate your portfolio with Python's robust libraries and intuitive syntax.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Food Delivery Website</h3>
+                        <p>Delivering your favorite meals to your doorstep with our seamless React-powered food delivery app.</p>
+                        <a href="https://food-app-theta-beryl.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Image Search </h3>
+                        <p>Explore and find stunning images effortlessly with our intuitive image search website built using HTML, CSS, and JavaScript,Unsplsh API.</p>
+                        <a href="https://imagehunt-sigma.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>netflix-clone</h3>
+                        <p>A Netflix clone app replicates the popular streaming service's user interface and
+                            functionality, allowing users to browse, search, and watch a wide range of movies and TV
+                            shows.</p>
+                        <a href="https://netflix-clone2-sepia.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------------------------contact---------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Connect</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>artigothdiya2001@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>8696331130</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/artisain01"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/11aaru"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="Arti Resume New.pdf" download class="btn  btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Arti Sain - All Rights Reserved <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-i6E8q5Fikirp4aoW2VWyCzrUrvDRkQPQXbZ8btPhz3BlY4O8SQpzT79r9CFB7-KA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</html>
